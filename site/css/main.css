@@ -4,23 +4,57 @@ body{
 }
 
 .wrapper{
-    padding:0;
     background-color: aquamarine;
-    height: 100vh;
+    min-height: auto;
     transition: all 2s;
     display: grid;
+    grid-template-rows: 80px auto;
+    grid-gap: 20px;
+    grid-template-areas:
+    "header"
+    "main"
+
 }
+
+header{
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+}
+
+
 nav{
     background-color: hotpink;
     width: auto;
     padding-right: 5%;
     height: 100vh;
-    left: -300px;
+    left: -350px;
     position: absolute;
     top: 0;
     transition: all 1s;
 }
 
+main{
+    grid-area: main;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-rows: 300px auto;
+    grid-template-columns: 130px auto;
+    grid-template-areas: 
+    "stor stor"
+
+}
+
+.box{
+    height: 130px;
+    background-color: peachpuff;
+}
+
+.stor{
+    grid-area: stor;
+    background-color: lightblue;
+}
 .test{
     left:0;
 }
@@ -29,6 +63,14 @@ li{
     list-style: none;
     font-size: 40px;
 }
+
+#hej{
+    visibility: hidden;
+}
+.activate{
+    visibility: visible;
+}
+
 i{
     padding: 5px;
     position: fixed;
