@@ -8,7 +8,7 @@ body{
     min-height: auto;
     transition: all 2s;
     display: grid;
-    grid-template-rows: 80px auto;
+    grid-template-rows: 120px auto;
     grid-gap: 20px;
     grid-template-areas:
     "header"
@@ -16,25 +16,43 @@ body{
 
 }
 
+
 header{
     grid-area: header;
-    justify-content: center;
-    align-items: center;
-    background-color: lightcoral;
+    background-image: url(../img/header.jpg);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 
 nav{
-    background-color: hotpink;
+    background-image: url(../img/caleb-woods2.jpg);
     width: auto;
     padding-right: 5%;
     height: 100vh;
     left: -350px;
-    position: absolute;
+    position: fixed;
     top: 0;
     transition: all 1s;
+    color: white;
 }
 
+h3{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: lightgray;
+
+}
 main{
     grid-area: main;
     display: grid;
@@ -64,9 +82,9 @@ li{
     font-size: 40px;
 }
 
-#hej{
+/* #hej{
     visibility: hidden;
-}
+} */
 .activate{
     visibility: visible;
 }
@@ -77,8 +95,10 @@ i{
     top:0;
     z-index: 0;
     font-size: 6vh !important;
+    color: white;
 }
 
 i:hover{
     cursor: pointer;
 }
+

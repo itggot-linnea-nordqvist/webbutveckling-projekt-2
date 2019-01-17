@@ -5,7 +5,7 @@ function knapp(event){
 }
 
 function lista(event){
-    let thing=document.querySelector("#hej")
+    let thing=document.querySelector("nav")
     thing.classList.toggle("activate")
     
 }
