@@ -53,20 +53,20 @@ a:hover{
     color: lightgray;
 
 }
-main{
+.första{
     grid-area: main;
     display: grid;
     grid-row-gap: 15px;
     grid-template-rows: 300px auto;
     grid-template-columns: 130px auto;
     grid-template-areas: 
-    "stor stor"
-
+    "stor stor" 
 }
 
 .box{
     height: 130px;
-    background-color: peachpuff;
+    background-color: linen;
+    font-family: 'Kalam', cursive;
 }
 
 .stor{
@@ -77,14 +77,15 @@ main{
     left:0;
 }
 
-li{
+.blurred{
+    filter: blur(1.5px);
+}
+
+#nav{
     list-style: none;
     font-size: 40px;
 }
 
-/* #hej{
-    visibility: hidden;
-} */
 .activate{
     visibility: visible;
 }
@@ -102,3 +103,76 @@ i:hover{
     cursor: pointer;
 }
 
+.recept{
+    grid-area: main;
+    display: grid;
+    background-color: rgb(53, 11, 11);
+    padding: 10px;
+    font-family: 'Kalam', cursive;
+    grid-row-gap: 10px;
+    grid-template-rows: 150px auto auto;
+    grid-template-columns: 150px auto;
+    grid-template-areas: 
+    "bild fakta"
+    "ingredienser ingredienser"
+    "steg steg";
+}
+
+.ingredienser{
+    grid-area: ingredienser;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border:2px solid aquamarine;
+}
+
+.steg{
+    border-radius: 25px;
+    border:3px solid aquamarine;
+    grid-area: steg;
+    background-color: white;
+    padding: 10px;
+}
+
+.bild{
+    grid-area: bild;
+    padding-left: -10px;
+}
+
+.fakta{
+    grid-area: fakta;
+    background-color: white;
+    padding: 10px;
+}
+
+#peppb, #box1{
+    background-image: url(/site/img/gingerbread-men2.jpg);
+}
+
+#rubrik{
+    margin: 0;
+}
+
+#margin{
+    margin:10px;
+}
+
+ol{
+    padding-left: 10px;
+}
+
+#knäckb, #box2{
+    background-image: url(/site/img/knack2.jpg)
+}
+
+.box:nth-child(odd) {
+    padding-left: 10px;
+  }
+
+p{
+    margin-top: 0;
+}
+
+#rockb{
+    background-image: url(/site/img/rocky-road2.jpg)
+}
