@@ -98,6 +98,11 @@ a:hover{
     left: -350px;
 }
 
+.ruta{
+    height: 300px;
+
+}
+
 i{
     padding: 5px;
     position: fixed;
@@ -191,6 +196,10 @@ p{
     "stor stor" 
 }
 
+.ruta{
+    height: 400px;
+}
+
 #titel{
     font-size: 300%;
     font-family: 'Kalam', cursive;
@@ -250,7 +259,7 @@ p{
         grid-template-columns: 200px auto;
         font-size: 25px;
     }
-    
+
     .box{
         height: 200px;
     }
