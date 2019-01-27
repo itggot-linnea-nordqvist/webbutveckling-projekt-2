@@ -9,11 +9,9 @@ body{
     transition: all 2s;
     display: grid;
     grid-template-rows: 120px auto;
-    grid-gap: 20px;
     grid-template-areas:
     "header"
     "main"
-
 }
 
 
@@ -24,6 +22,9 @@ header{
     color: white;
     font-size: 30px;
     font-family: 'Shadows Into Light', cursive;
+    width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -50,29 +51,36 @@ a{
 }
 
 a:hover{
-    color: lightgray;
+    color: rgb(143, 140, 140);
 
 }
 .första{
     grid-area: main;
     display: grid;
+    margin: 20px 0 20px 0;
     grid-row-gap: 15px;
     grid-template-rows: 300px auto;
-    grid-template-columns: 130px auto;
+    grid-template-columns: 150px auto;
     grid-template-areas: 
     "stor stor" 
+    
 }
 
 .box{
-    height: 130px;
+    height: 150px;
     background-color: linen;
     font-family: 'Kalam', cursive;
 }
 
 .stor{
     grid-area: stor;
-    background-color: lightblue;
+    background-color: rgb(41, 145, 105)
 }
+
+#stor{
+    background-image: url(/site/img/rocky-road.jpg)
+}
+
 .test{
     left:0;
 }
@@ -87,14 +95,14 @@ a:hover{
 }
 
 .activate{
-    visibility: visible;
+    left: -350px;
 }
 
 i{
     padding: 5px;
     position: fixed;
     top:0;
-    z-index: 0;
+    z-index: 10;
     font-size: 6vh !important;
     color: white;
 }
@@ -145,9 +153,6 @@ i:hover{
     padding: 10px;
 }
 
-#peppb, #box1{
-    background-image: url(/site/img/gingerbread-men2.jpg);
-}
 
 #rubrik{
     margin: 0;
@@ -161,13 +166,10 @@ ol{
     padding-left: 10px;
 }
 
-#knäckb, #box2{
-    background-image: url(/site/img/knack2.jpg)
-}
 
 .box:nth-child(odd) {
     padding-left: 10px;
-  }
+}
 
 p{
     margin-top: 0;
@@ -175,4 +177,142 @@ p{
 
 #rockb{
     background-image: url(/site/img/rocky-road2.jpg)
+}
+
+
+.andra{
+    grid-area: main;
+    margin: 20px 0 20px 0;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-rows: 80px auto;
+    grid-template-columns: 150px auto;
+    grid-template-areas: 
+    "stor stor" 
+}
+
+#titel{
+    font-size: 300%;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+#peppb, #box1{
+    background-image: url(/site/img/gingerbread-men2.jpg);
+}
+
+#knäckb, #box2{
+    background-image: url(/site/img/knack2.jpg)
+}
+
+#lussb, #box3{
+    background-image: url(/site/img/lussekatt2.jpg)
+}
+
+#mjukpeppb, #box4{
+    background-image: url(/site/img/mjukpepparkaka2.jpg)
+}
+
+#cheeseb, #box5{
+    background-image: url(/site/img/cheesecake2.jpg)
+}
+
+#kolab, #box6{
+    background-image: url(/site/img/kolasnittar2.jpg)
+}
+
+#fudgeb, #box7{
+    background-image: url(/site/img/fudge2.jpg)
+}
+
+#mintb, #box8{
+    background-image: url(/site/img/Mintkyssar2.jpg)
+}
+
+#brändab, #box9{
+    background-image: url(/site/img/brända\ mandlar2.jpg)
+}
+
+@media only screen and (min-device-width:1224px){
+    .wrapper{
+    grid-template-columns: 200px auto 200px;
+    grid-template-areas:
+    "header header header"
+    }
+
+    .första{
+        grid-template-rows: 400px auto;
+        grid-template-columns: 200px auto;
+        font-size: 25px;
+    }
+
+    .andra{
+        grid-template-columns: 200px auto;
+        font-size: 25px;
+    }
+    
+    .box{
+        height: 200px;
+    }
+
+    i{
+        font-size: 11vh !important;
+    }
+
+    ul{
+        padding-top: 20px;
+    }
+
+    .recept{
+        margin: 20px 0 20px 0;
+        grid-template-rows: 200px auto auto;
+        grid-template-columns: 200px auto;
+    }
+
+    .side{
+        margin:20px;
+        background-image: url(/site/img/sidor.jpg)
+    }
+
+    #stor{
+        background-image: url(/site/img/rocky\ road\ stor.jpg)
+    }
+    #peppb, #box1{
+        background-image: url(/site/img/gingerbread-men3.jpg);
+    }
+    
+    #knäckb, #box2{
+        background-image: url(/site/img/knack3.jpg)
+    }
+    
+    #lussb, #box3{
+        background-image: url(/site/img/lussekatt3.jpg)
+    }
+    
+    #mjukpeppb, #box4{
+        background-image: url(/site/img/mjukpepparkaka3.jpg)
+    }
+    
+    #cheeseb, #box5{
+        background-image: url(/site/img/cheesecake3.jpg)
+    }
+    
+    #kolab, #box6{
+        background-image: url(/site/img/kolasnittar3.jpg)
+    }
+    
+    #fudgeb, #box7{
+        background-image: url(/site/img/fudge3.jpg)
+    }
+    
+    #mintb, #box8{
+        background-image: url(/site/img/Mintkyssar3.jpg)
+    }
+    
+    #brändab, #box9{
+        background-image: url(/site/img/brända\ mandlar3.jpg)
+    }
+    #rockb{
+        background-image: url(/site/img/rocky\ road3.jpg)
+    }
 }

@@ -18,29 +18,19 @@
         <header>
             <h3>JULBAKVERK
         </header>
+        <div class="side"></div>
         <main>
-            <%= yield %>
-            
+        <%= yield %>
+        
         </main>
+        <div class="side"></div>
     </div>
     <nav> 
         <i class="material-icons" onclick="knapp()">clear</i>
         <ul>
             <li id="nav"><h3> <a href="/public/site/index.html">Hem</a> </h3></li>
-            <li id="nav"><h3 onclick="lista"()>Bakverk</h3>
-                <ul id="hej">
-                    <li id="nav"> <a href="/public/site/pepparkakor.html">Pepparkakor</a> </li>
-                    <li id="nav">Bullar</li>
-                </ul>
-                </li>
-                <li id="nav"><h3>Godis</h3>
-                <ul id="hej">
-                    <li id="nav"> <a href="/public/site/knäck.html">Knäck</a> </li>
-                    <li id="nav">Bullar</li>
-                    <li id="nav"> <a href="/public/site/rockyroad.html">Rocky road</li>
-                </ul>
-            </li>
-            <li id="nav"><h3>Vegan</h3></li>
+            <li id="nav"><a href="/public/site/bakverk.html"><h3>Bakverk</h3></a></li>
+            <li id="nav"><a href="/public/site/godis.html"><h3>Godis</h3></a> </li>
         </ul>
     </nav>
 <script src="/site/js/main.js"></script>

@@ -5,9 +5,3 @@ function knapp(event){
     blurred.classList.toggle("blurred")
     
 }
-
-function lista(event){
-    let thing=document.querySelector("nav")
-    thing.classList.toggle("activate")
-    
-}
